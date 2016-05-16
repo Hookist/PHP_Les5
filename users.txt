@@ -1,0 +1,2 @@
+a:2:{s:8:"username";s:4:"stas";s:8:"password";s:3:"321";}
+a:2:{s:8:"username";s:2:"gg";s:8:"password";s:2:"wp";}
