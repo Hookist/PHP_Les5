@@ -16,7 +16,7 @@ foreach($pages as $p)
 ?>
   <html>
    <title>
-
+ <b1>MainForm</b1>
    </title>
    <head>
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -35,7 +35,7 @@ foreach($pages as $p)
             {
                 
                 echo "<li role='presentation'>";
-                echo "<a href='index2.php?id=" . $key['id'] . "' >" . $key['name'] . "</a>";
+                echo "<a href=index2.php?id=" . $key['id'] . " >" . $key['name'] . "</a>";
              
                 echo "</li>";
             }

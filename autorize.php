@@ -1,4 +1,10 @@
+
 <?php
+  //$curUser = $_COOKIE['user'];
+  //$_POST['username'] = $curUser['username'];
+  //$_POST['password'] = $curUser['password'];
+
+   require('pages.php');
     $f = fopen("users.txt", "r");
    
    $user = array();
@@ -26,7 +32,7 @@ foreach ($user as $key => $value) {
       {
         echo  "\n POST username : " . $_POST['username'] . " ";
          echo  "\n POST password : " . $_POST['password'] . " ";
-        echo "est takoy";
+      
         $isEst = true;
         break;
       }
@@ -37,9 +43,26 @@ foreach ($user as $key => $value) {
    if($isEst)
    {
        echo "Est Takoy";
+ 
+       $title = $mainPage['name'];
+       echo $title;
+            $link = $mainPage['link'];
+       
+           $user = array(
+        "username" => $_POST['username'],
+        "password" => $_POST['password']
+        
+        );
+      $str = serialize($user);
+       setcookie("user", $str);
+    
    }
     else
     {
+        $title = $loginPage['name'];
+       echo $title;
+            $link = $loginPage['link'];
+        include("login.php");
         echo "Net Takogo";
     }
 
@@ -74,9 +97,23 @@ foreach ($user as $key => $value) {
 </div>
 
      <button type="submit">
-       SUBMIT
+       AUTORIZE
         
      </button>
+            <title>
+ 
+   </title>
+             <div id="title">
+             <h1>
+                 <?=$title?> 
+             </h1>
+            
+           
+                 
+         </div>
      </form>
+        
+
+        
       </body>
 </html>

@@ -8,4 +8,12 @@
             "name" => "About",
               "link" => "about.php"));
 
+  $mainPage = array(
+        "name" => "MainForm",
+                "link" => "index2.php");
+  $loginPage = array(
+      "name" => "LoginForm",
+      "link" => "login.php"
+      );
+      
 ?>

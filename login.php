@@ -5,9 +5,9 @@
         
     );
 $str = serialize($user);
-setcookie("user", $str);
-var_dump($str);
-var_dump(unserialize($str));
+//setcookie("user", $str);
+//var_dump($str);
+//var_dump(unserialize($str));
     $f=fopen("users.txt", "a");
     fputs($f, $str . "\n");
     //fgets($f, 3);
@@ -54,7 +54,7 @@ var_dump(unserialize($str));
     
 </div>
      <button type="submit">
-       SUBMIT
+       Registr
         
      </button>
      </form>
